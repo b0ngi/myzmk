@@ -87,10 +87,10 @@ DEF {
         NAV {
             display-name = "Navi";
             bindings = <
-&trans          &msc SCRL_UP      &msc SCRL_LEFT        &mmv MOVE_UP      &msc SCRL_RIGHT        &trans                &kp PG_UP        &kp HOME        &kp UP      &kp END     &trans      &trans
-&trans      &msc SCRL_DOWN    &mmv MOVE_LEFT      &mmv MOVE_DOWN    &mmv MOVE_RIGHT     &trans                &kp PG_DN        &kp LEFT        &kp DOWN    &kp RIGHT   &trans      &trans
-&trans          &kp LA(LC(NUBS))  &kp LA(LC(MINUS))   &kp GRAVE         &kp EQUAL           &kp MINUS                &trans          &mkp LCLK        &mkp MCLK   &mkp RCLK   &trans      &trans
-                                                                &kp LCTRL    &trans         &kp RET                  &kp SPACE        &trans          &trans
+&trans      &msc SCRL_UP    &msc SCRL_LEFT      &mmv MOVE_UP    &msc SCRL_RIGHT &none                &kp PG_UP        &kp HOME        &kp UP      &kp END     &none      &trans
+&none      &msc SCRL_DOWN   &mmv MOVE_LEFT      &mmv MOVE_DOWN  &mmv MOVE_RIGHT &none                &kp PG_DN        &kp LEFT        &kp DOWN    &kp RIGHT   &none      &none
+&trans     &none            &none               &mkp LCLK       &mkp MCLK       &mkp RCLK             &none          &mkp LCLK        &mkp MCLK   &mkp RCLK   &none      &none
+                                                    &kp LCTRL       &trans          &kp RET               &kp SPACE        &trans          &trans
             >;
         };
 
