@@ -18,12 +18,12 @@ include:
     artifact-name: zmk-lily58-right
 
 
-  # Corne-42 nice!view Firmeare
-  - keyboard: Corne
-    board: nice_nano_v2
-    shield: corne_left nice_view_adapter nice_view
-    artifact-name: zmk-corne-42-left
-  - keyboard: Corne
-    board: nice_nano_v2
-    shield: corne_right nice_view_adapter nice_view
-    artifact-name: zmk-corne-42-right
+#   # Corne-42 nice!view Firmeare
+#   - keyboard: Corne
+#     board: nice_nano_v2
+#     shield: corne_left nice_view_adapter nice_view
+#     artifact-name: zmk-corne-42-left
+#   - keyboard: Corne
+#     board: nice_nano_v2
+#     shield: corne_right nice_view_adapter nice_view
+#     artifact-name: zmk-corne-42-right
