@@ -42,13 +42,13 @@
         combo_leftclick {
             timeout-ms = <50>;
             bindings = <&mkp LCLK>;
-            key-positions = <45 46>;
+            key-positions = <31 32>;
             layers = <0 1>;
         };
         combo_rightclick {
             timeout-ms = <50>;
             bindings = <&mkp RCLK>;
-            key-positions = <46 47>;
+            key-positions = <31 32 33>;
             layers = <0 1>;
         };
     }; //The first parameter is just an internal name, the second one the keypress we want to execute during the combo, and the last one is for the key positions.
