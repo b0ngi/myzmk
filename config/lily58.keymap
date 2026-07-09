@@ -41,6 +41,8 @@
         COMBO(scratch,&kp F12, 20 21)
         COMBO(leftclick,&mkp LCLK, 45 46)
         COMBO(rightclick,&mkp RCLK, 46 47)
+        COMBO(leftclick1,&mkp LCLK, 52 45 46)
+        COMBO(rightclick1,&mkp RCLK, 52 46 47)
     }; //The first parameter is just an internal name, the second one the keypress we want to execute during the combo, and the last one is for the key positions.
 
 
@@ -94,7 +96,7 @@ DEF {
 &none &none &none &none &none &none &none &none &none &none &none &none
 &trans     &none           &none           &mmv MOVE_UP    &none           &none                             &kp HOME &kp PG_DN &kp PG_UP &kp END   &none  &trans
 &none      &msc SCRL_UP    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT &none                             &kp LEFT &kp DOWN  &kp UP    &kp RIGHT &none  &none
-&trans     &msc SCRL_DOWN  &none           &msc SCRL_LEFT  &msc SCRL_RIGHT &none     &none         &none     &none    &trans    &trans    &trans    &none  &none
+&trans     &msc SCRL_DOWN  &none           &msc SCRL_LEFT  &msc SCRL_RIGHT &none     &none         &none     &none    &none     &none     &none     &none  &none
                                            &trans          &trans          &trans    &trans        &trans    &trans   &none     &none 
             >;
         };
