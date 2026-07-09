@@ -94,7 +94,7 @@ DEF {
 &none &none &none &none &none &none &none &none &none &none &none &none
 &trans     &none           &none           &mmv MOVE_UP    &none           &none                             &kp HOME &kp PG_DN &kp PG_UP &kp END   &none  &trans
 &none      &msc SCRL_UP    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT &none                             &kp LEFT &kp DOWN  &kp UP    &kp RIGHT &none  &none
-&trans     &msc SCRL_DOWN  &none           &msc SCRL_LEFT  &msc SCRL_RIGHT &none     &none         &none     &none    &none     &none     &none     &none  &none
+&trans     &msc SCRL_DOWN  &none           &msc SCRL_LEFT  &msc SCRL_RIGHT &none     &none         &none     &none    &trans    &trans    &trans    &none  &none
                                            &trans          &trans          &trans    &trans        &trans    &trans   &none     &none 
             >;
         };
