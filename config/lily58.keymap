@@ -37,18 +37,30 @@
         COMBO(ret,&kp RET, 32 33)
         COMBO(esc,&kp ESC, 12 13)
         COMBO(delte,&kp DEL, 22 23)
-        COMBO(at,&kp RA(Q), 13 14)
+        COMBO(at,&kp RA(Q), 13 24)
         COMBO(scratch,&kp F12, 20 21)
-        combo_leftclick {
+        combo_leftclick_r {
             timeout-ms = <50>;
             bindings = <&mkp LCLK>;
             key-positions = <31 32>;
             layers = <0 1>;
         };
-        combo_rightclick {
+        combo_rightclick_r {
             timeout-ms = <50>;
             bindings = <&mkp RCLK>;
-            key-positions = <31 32 33>;
+            key-positions = <33 34>;
+            layers = <0 1>;
+        };
+        combo_leftclick_l {
+            timeout-ms = <50>;
+            bindings = <&mkp LCLK>;
+            key-positions = <26 27>;
+            layers = <0 1>;
+        };
+        combo_rightclick_l {
+            timeout-ms = <50>;
+            bindings = <&mkp RCLK>;
+            key-positions = <27 28>;
             layers = <0 1>;
         };
     }; //The first parameter is just an internal name, the second one the keypress we want to execute during the combo, and the last one is for the key positions.
