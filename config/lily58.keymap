@@ -40,16 +40,16 @@
         COMBO(at,&kp RA(Q), 13 14)
         COMBO(scratch,&kp F12, 20 21)
         combo_leftclick {
-            timeout-ms = 50;
-            bindings = &mkp LCLK;
-            key-positions = 45 46;
-            layers = 0 1;
+            timeout-ms = <50>;
+            bindings = <&mkp LCLK>;
+            key-positions = <45 46>;
+            layers = <0 1>;
         };
         combo_rightclick {
-            timeout-ms = 50;
-            bindings = &mkp RCLK;
-            key-positions = 46 47;
-            layers = 0 1;
+            timeout-ms = <50>;
+            bindings = <&mkp RCLK>;
+            key-positions = <46 47>;
+            layers = <0 1>;
         };
     }; //The first parameter is just an internal name, the second one the keypress we want to execute during the combo, and the last one is for the key positions.
 
