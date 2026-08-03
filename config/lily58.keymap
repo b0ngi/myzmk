@@ -170,6 +170,6 @@ ADJ {
         l4 {
             if-layers = <2 5>;
             then-layer = <4>;
-        }
+        };
     };
 };
