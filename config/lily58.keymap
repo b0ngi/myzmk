@@ -9,7 +9,7 @@
 #define NAV 1
 #define SYM 2
 #define ADJ 3
-#define EXTRA 4
+#define SYM2 4
 
 #define COMBO(NAME, BINDINGS, KEYPOS) \
     combo_##NAME { \
@@ -42,19 +42,19 @@
             timeout-ms = <50>;
             bindings = <&kp RET>;
             key-positions = <32 33>;
-            layers = <0 1 2>;
+            layers = <0 1 2 4>;
         };
         combo_leftclick_r {
             timeout-ms = <50>;
             bindings = <&mkp LCLK>;
             key-positions = <31 32>;
-            layers = <0 1>;
+            layers = <1>;
         };
         combo_rightclick_r {
             timeout-ms = <50>;
             bindings = <&mkp RCLK>;
             key-positions = <33 34>;
-            layers = <0 1>;
+            layers = <1>;
         };
         // combo_leftclick_l {
         //     timeout-ms = <50>;
@@ -130,10 +130,20 @@ DEF {
             display-name = "NumSym";
             bindings = <
 &none &none &none &none &none &none &none &none &none &none &none &none
-&trans                &kp EXCLAMATION  &kp AT_SIGN        &kp HASH  &kp DOLLAR  &kp PERCENT                        &kp CARET     &kp AMPERSAND  &kp ASTERISK &kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &trans
-&kp RA(RIGHT_BRACKET) &kp N1           &kp N2             &kp N3    &kp N4      &kp N5                             &kp N6        &kp N7         &kp N8       &kp N9               &kp N0                &trans
-&trans                &kp NUBS         &kp RA(MINUS)      &kp MINUS &kp EQUAL   &kp RA(E)    &none         &none   &kp RA(NUBS)  &kp RA(N7)     &kp RA(N8)   &kp RA(N9)           &kp RA(N0)            &trans
-                                                          &trans    &trans      &trans       &trans        &trans  &trans        &trans         &none 
+&trans                &kp EXCLAMATION  &kp AT_SIGN   &kp HASH  &kp DOLLAR  &kp PERCENT                        &kp CARET     &kp AMPERSAND  &kp ASTERISK &kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &trans
+&kp RA(RIGHT_BRACKET) &kp N1           &kp N2        &kp N3    &kp N4      &kp N5                             &kp N6        &kp N7         &kp N8       &kp N9               &kp N0                &trans
+&no 5                 &kp NUBS         &kp RA(MINUS) &kp MINUS &kp EQUAL   &kp RA(E)    &none         &none   &kp RA(NUBS)  &kp RA(N7)     &kp RA(N8)   &kp RA(N9)           &kp RA(N0)            &trans
+                                                     &trans    &trans      &trans       &trans        &trans  &trans        &trans         &none 
+            >;
+        };
+        SYM2 {
+            display-name = "NumSym2";
+            bindings = <
+&none &none &none &none &none &none &none &none &none &none &none &none
+&trans                &kp LS(MINUS)    &kp AT_SIGN   &kp HASH  &kp DOLLAR  &kp PERCENT                        &kp RA(NUBS)  &kp RA(N7)     &kp RA(N8)   &kp RA(N9)           &kp RA(N0)  &trans
+&kp RA(RIGHT_BRACKET) &kp N1           &kp RA(MINUS) &kp N3    &kp N4      &kp N5                             &kp N6        &kp N7         &kp N8       &kp N9               &kp N0      &kp LS(EQUAL)
+&trans                &kp LS(NUBS)     &kp RA(MINUS) &kp MINUS &kp EQUAL   &kp RA(E)    &none         &none   &kp RA(NUBS)  &kp RA(N7)     &kp RA(N8)   &kp RA(N9)           &kp RA(N0)  &trans
+                                                     &trans    &trans      &trans       &trans        &trans  &trans        &trans         &none 
             >;
         };
 
@@ -156,5 +166,10 @@ ADJ {
             if-layers = <1 2>;
             then-layer = <3>;
         };
+
+        l4 {
+            if-layers = <2 5>;
+            then-layer = <4>;
+        }
     };
 };
