@@ -84,15 +84,15 @@ DEF {
             >;
         };
 
-        NAV {
-            display-name = "Navi";
-            bindings = <
-&trans &none          &none          &mmv MOVE_UP    &none           &none &trans  &trans &kp HOME &kp PG_DN &kp PG_UP &kp END   &none  &trans
-&trans &msc SCRL_UP   &mmv MOVE_LEFT &mmv MOVE_DOWN  &mmv MOVE_RIGHT &none &trans  &trans &kp LEFT &kp DOWN  &kp UP    &kp RIGHT &none  &none
-&trans &msc SCRL_DOWN &none          &msc SCRL_LEFT  &msc SCRL_RIGHT &none                &none    &none     &none     &none     &none  &none
-                                     &trans          &trans          &trans               &trans   &trans    &trans    
-            >;
-        };
+//         NAV {
+//             display-name = "Navi";
+//             bindings = <
+// &trans &none          &none          &mmv MOVE_UP    &none           &none &trans  &trans &kp HOME &kp PG_DN &kp PG_UP &kp END   &none  &trans
+// &trans &msc SCRL_UP   &mmv MOVE_LEFT &mmv MOVE_DOWN  &mmv MOVE_RIGHT &none &trans  &trans &kp LEFT &kp DOWN  &kp UP    &kp RIGHT &none  &none
+// &trans &msc SCRL_DOWN &none          &msc SCRL_LEFT  &msc SCRL_RIGHT &none                &none    &none     &none     &none     &none  &none
+//                                      &trans          &trans          &trans               &trans   &trans    &trans    
+//             >;
+//         };
 
 //         SYM {
 //             display-name = "NumSym";
