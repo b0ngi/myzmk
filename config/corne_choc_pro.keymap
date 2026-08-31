@@ -13,7 +13,7 @@
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 15    // default: 10
 #include <dt-bindings/zmk/pointing.h>
 
-#define DEF 0
+#define DEF default_layer
 #define NAV 1
 #define SYM 2
 #define ADJ 3
