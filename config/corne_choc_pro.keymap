@@ -33,36 +33,36 @@
 };
 
 / {
-//Row 0:      0   1   2   3   4   5   6       7   8   9  10  11  13  14
-//Row 1:     15  16  17  18  19  20  21      22  23  24  25  26  27  28
-//Row 2:     28  29  30  31  32  33              34  35  36  37  38  39
+//Row 0:      0   1   2   3   4   5               6   7   8   9  10  11
+//Row 1:     12  13  14  15  16  17  18      19  20  21  22  23  24  25
+//Row 2:     26  27  28  29  30  31  32      33  34  35  36  37  38  39
 //Row 3:                 40  41  42              43  44  45 
 
     combos {
         compatible = "zmk,combos";
-        COMBO(ue, &kp LBKT, 3 9)
-        COMBO(ae, &kp SQT, 3 16)
-        COMBO(oe, &kp SEMI, 3 11)
+        COMBO(ue, &kp LBKT, 3 7)
+        COMBO(ae, &kp SQT, 3 13)
+        COMBO(oe, &kp SEMI, 3 9)
         COMBO(esc, &kp ESC, 0 1)
-        COMBO(delte, &kp DEL, 13 14)
-        COMBO(at, &kp  RA(Q), 1 15)
-        COMBO(scratch, &kp F12, 9 10 11)
+        COMBO(delte, &kp DEL, 10 11)
+        COMBO(at, &kp  RA(Q), 1 12)
+        COMBO(scratch, &kp F12, 7 8 9)
         combo_ret {
             timeout-ms = <50>;
             bindings = <&kp RET>;
-            key-positions = <25 26>;
+            key-positions = <22 23>;
             layers = <0 1 2>;
         };
         combo_leftclick_r {
             timeout-ms = <50>;
             bindings = <&mkp LCLK>;
-            key-positions = <24 25>;
+            key-positions = <21 22>;
             layers = <1>;
         };
         combo_rightclick_r {
             timeout-ms = <50>;
             bindings = <&mkp RCLK>;
-            key-positions = <26 27>;
+            key-positions = <23 24>;
             layers = <1>;
         };
     }; //The first parameter is just an internal name, the second one the keypress we want to execute during the combo, and the last one is for the key positions.
