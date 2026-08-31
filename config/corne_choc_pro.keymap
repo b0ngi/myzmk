@@ -33,10 +33,44 @@
 };
 
 / {
+//Row 0:      0   1   2   3   4   5   6       7   8   9  10  11  13  14
+//Row 1:     15  16  17  18  19  20  21      22  23  24  25  26  27  28
+//Row 2:     28  29  30  31  32  33              34  35  36  37  38  39
+//Row 3:                 40  41  42              43  44  45 
+
+    combos {
+        compatible = "zmk,combos";
+        COMBO(ue, &kp LBKT, 3 9)
+        COMBO(ae, &kp SQT, 3 16)
+        COMBO(oe, &kp SEMI, 3 11)
+        COMBO(esc, &kp ESC, 0 1)
+        COMBO(delte, &kp DEL, 13 14)
+        COMBO(at, &kp  RA(Q), 1 15)
+        COMBO(scratch, &kp F12, 9 10 11)
+        combo_ret {
+            timeout-ms = <50>;
+            bindings = <&kp RET>;
+            key-positions = <25 26>;
+            layers = <0 1 2 4>;
+        };
+        combo_leftclick_r {
+            timeout-ms = <50>;
+            bindings = <&mkp LCLK>;
+            key-positions = <24 25>;
+            layers = <1>;
+        };
+        combo_rightclick_r {
+            timeout-ms = <50>;
+            bindings = <&mkp RCLK>;
+            key-positions = <26 27>;
+            layers = <1>;
+        };
+    }; //The first parameter is just an internal name, the second one the keypress we want to execute during the combo, and the last one is for the key positions.
+
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
+        DEF {
             display-name = "QWERTY";
             // --------------------------------------------------------------------------------
             // |  TAB |  Q  |  W  |  E  |  R  |  T  |  MUTE |  PP   |  Y  |  U   |  I  |  O  |  P  | BSPC |
