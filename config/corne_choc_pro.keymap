@@ -94,15 +94,15 @@ DEF {
             >;
         };
 
-        SYM {
-            display-name = "NumSym";
-            bindings = <
-&kp GRAVE &kp EXCLAMATION  &kp AT_SIGN   &kp HASH  &kp DOLLAR  &kp PERCENT &trans  &trans &kp CARET     &kp AMPERSAND  &kp ASTERISK &kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &trans
-&trans    &kp N1           &kp N2        &kp N3    &kp N4      &kp N5      &trans  &trans &kp N6        &kp N7         &kp N8       &kp N9               &kp N0                &kp RA(RIGHT_BRACKET)
-&trans    &kp NUBS         &kp RA(MINUS) &kp MINUS &kp EQUAL   &kp RA(E)                  &kp RA(NUBS)  &kp RA(N7)     &kp RA(N8)   &kp RA(N9)           &kp RA(N0)            &trans
-                                         &trans    &trans      &trans                     &trans        &trans         &trans 
-            >;
-        };
+//         SYM {
+//             display-name = "NumSym";
+//             bindings = <
+// &kp GRAVE &kp EXCLAMATION  &kp AT_SIGN   &kp HASH  &kp DOLLAR  &kp PERCENT &trans  &trans &kp CARET     &kp AMPERSAND  &kp ASTERISK &kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &trans
+// &trans    &kp N1           &kp N2        &kp N3    &kp N4      &kp N5      &trans  &trans &kp N6        &kp N7         &kp N8       &kp N9               &kp N0                &kp RA(RIGHT_BRACKET)
+// &trans    &kp NUBS         &kp RA(MINUS) &kp MINUS &kp EQUAL   &kp RA(E)                  &kp RA(NUBS)  &kp RA(N7)     &kp RA(N8)   &kp RA(N9)           &kp RA(N0)            &trans
+//                                          &trans    &trans      &trans                     &trans        &trans         &trans 
+//             >;
+//         };
         
 // ADJ {
 //     display-name = "System";
